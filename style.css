@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    border-width: 0 0 1px;
+    border-color: black;
+    border-style: solid;
+    height: 76px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size: 30px !important;
+  padding: 22px 22px 22px 22px;
+  cursor: pointer;
+}
+
+/* close 버튼 흰색으로 바꾸는 코드 */
+.sidebar > .material-symbols-outlined {
+    color: white;
+}
+
+.menu {
+    padding: 22px 22px 22px 22px;
+}
+
+div[class="sidebar"] {
+    width: 300px;
+    height: 100%;
+    background:#222;
+    position:fixed;
+    top:0;
+    left: -300px;
+    z-index: 1;
+    transition:all .35s;
+}
+
+.logo {
+    text-align: center;
+    align-self: center;
+    font-size: 26px;
+}
+
+.sidebar {
+    list-style: none;
+    background-color: rgba(48, 48, 48, 0.5);
+}
+
+.sidebar li {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    text-align: center;
+    margin: 80px 20px 0 20px;
+    list-style: none;
+}
+
+li {
+    display: list-item;
+}
+
+.sidebar li a {
+    color: white;
+    text-decoration: none;
+    line-height: 44px;
+}
+
+swiper-container {
+    width: 100%;
+    height:calc(100vh - 100px);
+    z-index: 0;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiper img {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+
+body {
+    margin: 0;
+}
+
+.menu {
+    padding: 10px 10px 10px 10px;
+}
+
+.material-symbols-outlined {
+    padding: 10px 10px 10px 10px;
+  }
+
+header {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    border-width: 0 0 1px;
+    border-color: black;
+    border-style: solid;
+    height: 48px;
+}
+
+div[class="sidebar"] {
+    width: 300px;
+    height: 100%;
+    background:#222;
+    position:fixed;
+    top:0;
+    left: -300px;
+    z-index: 1;
+    transition:all .35s;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+}
